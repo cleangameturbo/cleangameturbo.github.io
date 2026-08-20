@@ -1,163 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy - Clean Game Turbo</title>
+<title>Privacy Policy — Clean Game Turbo</title>
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 800px; margin: 0 auto; padding: 24px 20px 60px; background:#fff; }
-  h1 { font-size: 1.7em; margin-bottom: 4px; }
-  h2 { font-size: 1.25em; margin-top: 2em; border-bottom: 2px solid #eee; padding-bottom: 6px; }
-  h3 { font-size: 1.05em; margin-top: 1.3em; }
-  .updated { color: #666; font-size: 0.95em; margin-bottom: 1.5em; }
-  table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95em; }
-  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  h3 { font-size: 1.02rem; margin-top: 1.2rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: 0.95rem; vertical-align: top; }
   th { background: #f5f5f5; }
-  ul { padding-left: 22px; }
-  .note { background: #fff8e1; border-left: 4px solid #ffca28; padding: 10px 14px; margin: 1em 0; font-size: 0.95em; }
-  code { background: #f2f2f2; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+  a { color: #0b5fff; }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy for Clean Game Turbo</h1>
-<p class="updated">Last updated: July 10, 2026</p>
+<h1>Privacy Policy — Clean Game Turbo</h1>
+<p class="updated">Terakhir diperbarui: Agustus 2026</p>
 
-<p>Clean Game Turbo ("the App", "we", "us") is developed by <strong>Kamal Tech</strong> ("Developer", "we"). This Privacy Policy explains how we collect, use, store, and protect information when you use the Clean Game Turbo app (package name: <code>com.cleangameturbo.pro</code>) on your Android device.</p>
+<p>Kebijakan Privasi ini menjelaskan bagaimana aplikasi Clean Game Turbo
+("Aplikasi") memproses data saat Anda menggunakannya. Aplikasi
+dikembangkan dan dikelola secara independen. Jika ada pertanyaan,
+hubungi <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a>.</p>
 
-<p>By downloading, installing, or using the App, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, please do not use the App.</p>
+<h2>1. Ringkasan</h2>
+<p>Clean Game Turbo adalah aplikasi utilitas Android untuk membersihkan
+penyimpanan (cache dan file sampah), mengelola aplikasi terpasang,
+Game Mode dengan overlay dalam game, Privacy Mode berbasis VPN lokal, dan
+fitur premium (VIP) melalui langganan Google Play Billing. Aplikasi ini
+menampilkan iklan (Google AdMob) pada versi gratis.</p>
+<p>Aplikasi <strong>tidak</strong> menggunakan Accessibility Service dan
+<strong>tidak</strong> memiliki fitur deteksi aplikasi otomatis
+("Auto Mode") dalam bentuk apa pun.</p>
 
-<h2>1. Quick Summary</h2>
-<ul>
-  <li>Clean Game Turbo is a <strong>cleaner and game booster</strong> app that operates locally on your device.</li>
-  <li>Most data processing (file scanning, RAM, cache, notifications) is performed <strong>entirely on your device</strong> and is <strong>not sent to our servers</strong>.</li>
-  <li>We do not have an account/login system, so we do not collect your name, email, or phone number.</li>
-  <li>We use third-party services (Google AdMob) to display ads, and Google Play Billing for in-app purchases (VIP subscription).</li>
-</ul>
-
-<h2>2. Information We Collect and Permissions Used</h2>
-<p>The App requests a number of Android permissions so its features can function. Below is an explanation of each permission, the data accessed, and its purpose:</p>
-
+<h2>2. Data yang Diproses dan Alasannya</h2>
 <table>
-<tr><th>Permission / Feature</th><th>Data Accessed</th><th>Purpose</th></tr>
-<tr>
-  <td>Media Access (Photos, Videos, Audio)<br><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code>, <code>READ_MEDIA_VISUAL_USER_SELECTED</code>, <code>READ_EXTERNAL_STORAGE</code></td>
-  <td>Media file metadata and content (size, date, thumbnails) to scan for junk files, cache, and duplicate or blurry photos/videos.</td>
-  <td>To display storage-cleaner scan results and the duplicate photo/video finder feature. Scanning and deletion are performed <strong>entirely on-device</strong>; media files are never uploaded to any server.</td>
-</tr>
-<tr>
-  <td>App Usage Statistics<br><code>PACKAGE_USAGE_STATS</code></td>
-  <td>Information about which app is currently running in the foreground.</td>
-  <td>To detect when a game starts/stops so the App can automatically apply per-game performance settings (Game Mode) and show the booster overlay. This data is processed locally and never leaves your device.</td>
-</tr>
-<tr>
-  <td>Installed App List<br>(<code>&lt;queries&gt;</code> for launcher apps)</td>
-  <td>List of apps that can be launched (have a launcher icon).</td>
-  <td>To show a list of games/apps in the "Add Games" and "Focus Mode" pickers so users can choose which apps to optimize or temporarily block. Does not use the <code>QUERY_ALL_PACKAGES</code> permission.</td>
-</tr>
-<tr>
-  <td>Notifications (Notification Listener)<br><code>BIND_NOTIFICATION_LISTENER_SERVICE</code>, <code>POST_NOTIFICATIONS</code>, <code>ACCESS_NOTIFICATION_POLICY</code></td>
-  <td>Incoming notifications from other apps on your device (sender app name; notification content is readable by this system service).</td>
-  <td>Used to power automatic "Do Not Disturb" mode and notification filtering/muting while a game is running (Game Mode/Focus Mode), so gameplay isn't interrupted. Processing is entirely local; notification content is <strong>never stored permanently, never logged, and never sent to our servers or any third party.</strong></td>
-</tr>
-<tr>
-  <td>Modify System Settings<br><code>WRITE_SETTINGS</code></td>
-  <td>System settings such as screen brightness.</td>
-  <td>To automatically adjust screen brightness while Game Mode is active.</td>
-</tr>
-<tr>
-  <td>Display Over Other Apps<br><code>SYSTEM_ALERT_WINDOW</code></td>
-  <td>No personal data; display permission only.</td>
-  <td>To show the game booster overlay (FPS counter, quick-action buttons, custom crosshair) on top of the game app while in use.</td>
-</tr>
-<tr>
-  <td>Foreground Services<br><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>, <code>WAKE_LOCK</code></td>
-  <td>No personal data.</td>
-  <td>To keep game-monitoring services (GameService, GameModeService) running in the background during a play session, as required by Android policy for long-running services.</td>
-</tr>
-<tr>
-  <td>Local VPN (Focus Mode)<br><code>BIND_VPN_SERVICE</code></td>
-  <td>List of apps (e.g. chat apps) the user selects to block from internet access.</td>
-  <td>The "Focus Mode" feature uses a <strong>local-only VPN</strong> to temporarily block internet access for selected apps (e.g. chat apps) so your online status/notifications stay hidden while gaming. <strong>No traffic ever leaves your device, is routed to our servers, or is shared with any third party.</strong> This is not a VPN for changing your location or masking your IP on the internet.</td>
-</tr>
-<tr>
-  <td>Network Information<br><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>INTERNET</code></td>
-  <td>Connection status (connected/not, network type).</td>
-  <td>Required to load ads, verify VIP purchases, and ensure online features work correctly (e.g. Google Play Billing license validation).</td>
-</tr>
+<tr><th>Data / Izin</th><th>Digunakan untuk</th><th>Dikirim keluar perangkat?</th></tr>
+<tr><td>Media (foto/video/audio) via <code>READ_MEDIA_*</code></td><td>Menampilkan dan menghitung ukuran file di fitur pembersih penyimpanan, agar Anda bisa memilih file mana yang dihapus</td><td>Tidak — diproses lokal di perangkat</td></tr>
+<tr><td>Daftar aplikasi terpasang</td><td>Fitur App Manager (uninstall, lihat cache per-app) dan pemilih game ("Add Games")</td><td>Tidak</td></tr>
+<tr><td>Statistik penggunaan aplikasi (<code>PACKAGE_USAGE_STATS</code>)</td><td>Mendeteksi kapan game yang Anda pilih sendiri dan Game Mode-nya sudah aktif berpindah ke background, agar sesi Game Mode bisa dihentikan dan pengaturan dipulihkan otomatis. Hanya dipakai untuk sesi yang sudah Anda mulai sendiri — bukan untuk mendeteksi aplikasi lain secara umum</td><td>Tidak</td></tr>
+<tr><td>Info perangkat (RAM, penyimpanan, baterai, CPU/suhu bila tersedia sistem)</td><td>Ditampilkan di layar Booster dan overlay Game Mode sebagai statistik real-time</td><td>Tidak</td></tr>
+<tr><td>Trafik jaringan aplikasi lain (saat Privacy Mode aktif)</td><td>Fitur VPN lokal (lihat bagian 4) yang memblokir akses internet aplikasi lain secara sementara</td><td>Tidak — paket dibaca lalu langsung dibuang, tidak diteruskan ke server mana pun</td></tr>
+<tr><td>Status pembelian/langganan VIP</td><td>Memverifikasi status VIP agar fitur premium terbuka</td><td>Ya — diproses oleh Google Play Billing (dikelola Google, lihat kebijakan privasi Google)</td></tr>
+<tr><td>Identifier iklan & data untuk personalisasi iklan</td><td>Menampilkan iklan (AdMob) di versi gratis</td><td>Ya — dikelola Google AdMob, lihat bagian 5</td></tr>
 </table>
 
-<h3>Data We Do NOT Collect</h3>
+<h2>3. Yang TIDAK Dilakukan Aplikasi</h2>
 <ul>
-  <li>We do not ask for your name, email address, phone number, or any account registration information.</li>
-  <li>We do not access contacts, call history, SMS, location (GPS), microphone, or camera.</li>
-  <li>We do not store copies of your photos, videos, or notification content on our servers — everything is processed on your device.</li>
+<li>Tidak menggunakan Accessibility Service untuk membaca layar atau input Anda.</li>
+<li>Tidak memiliki fitur deteksi/otomatisasi aplikasi tersembunyi ("Auto Mode").</li>
+<li>Tidak membaca isi paket jaringan yang lewat VPN lokal — hanya dibuang.</li>
+<li>Tidak menjual data pribadi Anda kepada pihak ketiga.</li>
+<li>Tidak mengunggah isi file media Anda ke server mana pun.</li>
 </ul>
 
-<h2>3. Third-Party Services</h2>
-<p>The App uses the following third-party Software Development Kits (SDKs), which may collect data according to their own privacy policies:</p>
-<table>
-<tr><th>Service</th><th>Function</th><th>Privacy Policy</th></tr>
-<tr>
-  <td>Google AdMob (Google Mobile Ads)</td>
-  <td>Displays ads (banner/interstitial) within the App. May collect the advertising identifier, device data, and ad interactions for ad personalization/measurement purposes.</td>
-  <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a> &amp; <a href="https://www.google.com/about/company/user-consent-policy/" target="_blank">Google Ads/AdSense EU User Consent Policy</a></td>
-</tr>
-<tr>
-  <td>Google User Messaging Platform (UMP)</td>
-  <td>Displays the ad consent form as required by applicable regulations (e.g. GDPR for EEA users, and other applicable privacy rules).</td>
-  <td><a href="https://developers.google.com/admob/ump/android/quick-start" target="_blank">developers.google.com/admob/ump</a></td>
-</tr>
-<tr>
-  <td>Google Play Billing</td>
-  <td>Processes in-app purchases (VIP subscription/one-time purchase). Payment transactions are handled entirely by Google Play; we do not receive or store your payment card details.</td>
-  <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-</tr>
-</table>
+<h2>4. Privacy Mode (VPN)</h2>
+<p>Privacy Mode menggunakan <code>VpnService</code> bawaan Android untuk
+membuat tunnel lokal yang, secara default, memblokir akses internet
+untuk <strong>semua aplikasi di perangkat</strong> (termasuk game yang
+sedang Anda mainkan) selagi fitur ini aktif — kecuali Clean Game Turbo
+sendiri, yang dikecualikan agar notifikasi, verifikasi langganan VIP,
+dan iklan aplikasi ini tetap berjalan normal. Paket jaringan yang masuk
+ke tunnel ini <strong>hanya dibaca lalu dibuang</strong> — tidak pernah
+diteruskan ke server eksternal mana pun, tidak disimpan, dan tidak
+dianalisis isinya. Fitur ini sepenuhnya opsional dan hanya aktif setelah
+Anda menyetujui izin VPN dari sistem Android dan mengaktifkannya sendiri
+lewat Game Settings atau panel overlay.</p>
 
-<div class="note">This App displays ads powered by Google AdMob. Users in certain regions (e.g. the EU/EEA, UK) will be asked to provide consent for ad personalization via the UMP consent form the first time the App is opened.</div>
+<h2>5. Iklan (Google AdMob)</h2>
+<p>Versi gratis Aplikasi menampilkan iklan melalui Google AdMob. Untuk
+pengguna di EEA, Inggris, dan wilayah yang mewajibkan, Aplikasi
+menampilkan formulir consent (Google User Messaging Platform/UMP) sebelum
+meminta iklan, sesuai kerangka kerja IAB TCF/persyaratan Google. Anda
+dapat meninjau atau mengubah pilihan consent Anda kapan saja lewat
+menu "Privacy Options" di halaman Pengaturan Aplikasi. AdMob dapat
+mengumpulkan identifier iklan dan data teknis perangkat sesuai
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>
+dan <a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">Kebijakan Consent Pengguna Google</a>.</p>
 
-<h2>4. How We Use Information</h2>
-<ul>
-  <li>To run core features: RAM cleaning, junk/cache file cleaning, duplicate photo & video detection, game booster, and Focus Mode.</li>
-  <li>To display ads that fund the free version of the App.</li>
-  <li>To process VIP/premium purchases through Google Play Billing.</li>
-  <li>To improve App stability and performance through standard crash reporting from Google Play (if enabled by the Android system).</li>
-</ul>
+<h2>6. Pembelian dan Langganan (Google Play Billing)</h2>
+<p>Fitur VIP (Game Mode, tema premium, bebas iklan) dibeli lewat Google
+Play Billing dengan paket mingguan atau bulanan. Data pembayaran (kartu,
+metode pembayaran) diproses sepenuhnya oleh Google Play dan tidak pernah
+diakses atau disimpan oleh Aplikasi ini. Aplikasi hanya menerima status
+kepemilikan langganan dari Google Play untuk membuka fitur VIP.</p>
 
-<h2>5. Data Storage and Security</h2>
-<p>App preference data (e.g. favorite games list, Game Mode settings, VIP subscription status) is stored locally on your device using local storage (Android DataStore/preferences) and <strong>is not sent to our servers</strong>, since this App has no backend server. We rely on standard Android security practices (runtime permissions, app sandboxing) to help protect data on your device.</p>
+<h2>7. Penyimpanan Data</h2>
+<p>Pengaturan Aplikasi (preferensi tema, status VIP cache, game yang Anda
+tambahkan, dll.) disimpan secara lokal di perangkat Anda. Aplikasi tidak
+mengoperasikan server backend sendiri, sehingga data ini tidak disimpan
+di server milik pengembang.</p>
 
-<h2>6. Data Sharing</h2>
-<p>We do not sell your personal data. Data may only be shared with:</p>
-<ul>
-  <li>Third-party service providers listed in Section 3 (Google AdMob, Google Play Billing), for their respective functions.</li>
-  <li>Legal authorities, if required by applicable law.</li>
-</ul>
+<h2>8. Izin yang Dapat Dicabut</h2>
+<p>Semua izin di atas dapat dicabut kapan saja melalui Pengaturan sistem
+Android (Settings → Apps → Clean Game Turbo → Permissions). Mencabut izin
+tertentu dapat menonaktifkan fitur terkait, tetapi tidak menghapus data
+yang sudah tersimpan secara lokal di perangkat Anda.</p>
 
-<h2>7. Your Rights and Choices</h2>
-<ul>
-  <li><strong>Revoke permissions</strong>: You can revoke any permission (media, notifications, usage access, etc.) at any time via Android Settings &gt; Apps &gt; Clean Game Turbo &gt; Permissions. Revoking certain permissions may disable some features.</li>
-  <li><strong>Disable ad personalization</strong>: You can reset your ad preferences via your device's Google Settings (Google &gt; Ads) or through the consent form (UMP) shown by the App.</li>
-  <li><strong>Delete data</strong>: Uninstalling the App will remove all local data stored by the App on your device.</li>
-  <li><strong>Notification Listener</strong>: Access for the notification listener service can be revoked at any time via Android Settings &gt; Special App Access &gt; Notification Access.</li>
-</ul>
+<h2>9. Anak-Anak</h2>
+<p>Aplikasi ini tidak ditujukan untuk anak-anak di bawah usia yang
+disyaratkan hukum yang berlaku, dan tidak dengan sengaja mengumpulkan
+data pribadi dari anak-anak.</p>
 
-<h2>8. Children's Privacy</h2>
-<p>This App is not directed at children under the age of 13 (or the applicable minimum age in your region), and we do not knowingly collect personal data from children. If you are a parent or guardian and believe your child has provided us with personal data, please contact us so it can be removed.</p>
+<h2>10. Perubahan Kebijakan</h2>
+<p>Kebijakan Privasi ini dapat diperbarui dari waktu ke waktu. Perubahan
+material akan tercermin melalui pembaruan tanggal di bagian atas halaman
+ini dan/atau pembaruan Aplikasi.</p>
 
-<h2>9. International Users (GDPR/CCPA)</h2>
-<p>If you are located in the European Economic Area (EEA), the UK, or California, you may have additional rights over your personal data (access, correction, deletion, portability, objection to processing) under GDPR or CCPA. Because this App fundamentally processes data locally and has no account system, most of these rights are relevant to data processed by our advertising partners (see Section 3). You may contact us using the information in Section 11 with any questions about these rights.</p>
-
-<h2>10. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date at the top of this page. We encourage you to review this page periodically.</p>
-
-<h2>11. Contact Us</h2>
-<p>If you have any questions or requests regarding this Privacy Policy or your data, please contact us at:</p>
-<p>
-Email: <strong>support.cleangameturbo@gmail.com</strong><br>
-Developer: <strong>Kamal Tech</strong>
-</p>
+<h2>11. Kontak</h2>
+<p>Pertanyaan atau permintaan terkait privasi dapat disampaikan ke:
+<a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a></p>
 
 </body>
 </html>
