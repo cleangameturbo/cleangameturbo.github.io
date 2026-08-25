@@ -1,148 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Clean Game Turbo</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #1a1a1a;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .last-updated {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 8px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Clean Game Turbo</title>
+<style>
+  :root{
+    --bg:#0b0e13;
+    --panel:#12161e;
+    --ink:#e8ecf3;
+    --muted:#9aa4b6;
+    --cyan:#3fe8ff;
+    --violet:#a685ff;
+    --line:#232a37;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+  }
+  .hero{
+    padding:56px 24px 40px;
+    background:
+      radial-gradient(600px 300px at 15% -10%, rgba(166,133,255,.15), transparent 60%),
+      radial-gradient(500px 260px at 100% 0%, rgba(63,232,255,.15), transparent 60%),
+      var(--bg);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{max-width:760px;margin:0 auto}
+  .eyebrow{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--violet);
+    border:1px solid rgba(166,133,255,.35);
+    padding:4px 10px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  h1{
+    margin:0 0 8px;
+    font-size:32px;
+    background:linear-gradient(90deg,var(--violet),var(--cyan));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .meta{color:var(--muted);font-size:14px}
+  main{max-width:760px;margin:0 auto;padding:40px 24px 80px}
+  section{margin-bottom:36px}
+  h2{
+    font-size:19px;
+    color:var(--ink);
+    border-left:3px solid var(--violet);
+    padding-left:12px;
+    margin:0 0 12px;
+  }
+  p{color:#cdd4e0;margin:0 0 12px}
+  ul{margin:0 0 12px;padding-left:20px;color:#cdd4e0}
+  li{margin-bottom:8px}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px 20px;
+    margin-bottom:14px;
+  }
+  a{color:var(--cyan)}
+  .contact{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+  }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+    padding:24px;
+    border-top:1px solid var(--line);
+  }
+  .warn{
+    border-left:3px solid #ffb14e;
+    background:rgba(255,177,78,.08);
+    padding:12px 16px;
+    border-radius:8px;
+    color:#f0d9b5;
+    font-size:14px;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Terms of Service</h1>
-        <p class="last-updated">Last Updated: August 2026</p>
 
-        <div class="section">
-            <h2>1. Acceptance of Terms</h2>
-            <p>By downloading, installing, and using Clean Game Turbo ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
-        </div>
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Legal · Clean Game Turbo</span>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective date: August 25, 2026 &nbsp;·&nbsp; App: Clean Game Turbo (com.cleangameturbo.pro)</p>
+  </div>
+</div>
 
-        <div class="section">
-            <h2>2. Description of Service</h2>
-            <p>Clean Game Turbo is a performance optimization and game utility application for Android devices. The App provides the following features:</p>
-            <ul>
-                <li><strong>Game Mode:</strong> A manual, per-game overlay feature that displays system performance metrics (CPU, RAM, temperature, battery, FPS) when a gaming session is active. Requires VIP subscription.</li>
-                <li><strong>Privacy Mode (VPN):</strong> A local-only VPN service that blocks internet access only for user-selected applications. Selected apps experience network blocking; unselected apps (including games) continue normal network operation.</li>
-                <li><strong>Game Booster:</strong> Performance optimization tools including CPU/RAM management, notification filtering, and display settings adjustment.</li>
-            </ul>
-        </div>
+<main>
 
-        <div class="section">
-            <h2>3. Game Mode Terms</h2>
-            <ul>
-                <li>Game Mode is a <strong>VIP-only feature</strong>. It is not available to free tier users.</li>
-                <li>Game Mode is <strong>completely manual:</strong> it does not automatically activate based on game detection.</li>
-                <li>Game Mode is <strong>per-game:</strong> each game has independent Game Mode settings that must be enabled individually by the user.</li>
-                <li>Game Mode settings are <strong>not retained across app reboots</strong> — Game Mode does not resume automatically after device reboot or app restart without explicit user action.</li>
-                <li>When Game Mode is disabled for a game, the overlay will not appear, even if the game is opened.</li>
-                <li>The App overlay is provided as-is and does not measure actual game FPS — it displays the overlay's own frame rate.</li>
-            </ul>
-        </div>
+<section>
+  <p>By downloading, installing, or using the <strong>Clean Game Turbo</strong> app ("App"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the App.</p>
+</section>
 
-        <div class="section">
-            <h2>4. Privacy Mode (VPN) Terms</h2>
-            <ul>
-                <li>Privacy Mode uses Android's built-in VpnService to create a <strong>local-only VPN tunnel</strong>.</li>
-                <li>Privacy Mode only blocks internet access for applications <strong>explicitly selected by the user.</strong></li>
-                <li>Applications that are <strong>not selected,</strong> including games and all other apps, maintain <strong>normal network connectivity.</strong></li>
-                <li>Privacy Mode <strong>does not use a remote VPN server.</strong> All blocking is performed locally on the device.</li>
-                <li>Privacy Mode <strong>does not transmit, store, or log user traffic</strong> to any third-party server.</li>
-                <li>Supported apps for blocking are limited to: WhatsApp, WhatsApp Business, Telegram, Messenger, Instagram, LINE, Discord, and Gmail.</li>
-                <li>Privacy Mode is <strong>completely optional</strong> and must be actively enabled by the user.</li>
-                <li>The user can disable Privacy Mode at any time through the app or by revoking the VPN permission from Android Settings.</li>
-                <li>If the user selects no applications for blocking, the VPN service will not establish a tunnel.</li>
-            </ul>
-        </div>
+<section>
+  <h2>1. Description of Service</h2>
+  <p>Clean Game Turbo is an Android utility app that provides:</p>
+  <ul>
+    <li><strong>Game Booster</strong> — RAM cleaning, CPU cooling/performance adjustments, and per-game profiles that can be applied automatically when a game launches (Auto Mode, a VIP feature).</li>
+    <li><strong>Notification Blocking While Gaming</strong> — hides incoming notifications during a game session, if enabled by the user.</li>
+    <li><strong>Storage Analyzer</strong> — shows a breakdown of storage usage by file category (photos, videos, audio) on your device.</li>
+    <li><strong>VIP Subscription/Purchase</strong> — unlocks additional features such as Auto Mode and a premium look, processed through Google Play Billing.</li>
+  </ul>
+</section>
 
-        <div class="section">
-            <h2>5. VIP Subscription</h2>
-            <ul>
-                <li>VIP subscription unlocks Game Mode and other premium features.</li>
-                <li>VIP purchases are made through Google Play Billing and are subject to Google Play's subscription terms.</li>
-                <li>Subscription renewals occur automatically unless canceled by the user through Google Play settings.</li>
-                <li>VIP status is verified through Google Play Billing and associated with the user's Google account.</li>
-                <li>The App does not bypass, fake, or circumvent Google Play Billing verification.</li>
-            </ul>
-        </div>
+<section>
+  <h2>2. Dependence on System Permissions</h2>
+  <p>Several features require specific Android permissions (e.g. usage access, notification access, media access, display over other apps). If you decline or revoke these permissions, the related features may not work or may work with limited functionality. You can manage these permissions at any time through Android Settings.</p>
+</section>
 
-        <div class="section">
-            <h2>6. User Responsibilities</h2>
-            <ul>
-                <li>You are responsible for maintaining the confidentiality of your Google account credentials.</li>
-                <li>You agree to use the App only for lawful purposes and in compliance with all applicable laws and regulations.</li>
-                <li>You agree not to use the App in any way that could harm the device, other users, or violate third-party rights.</li>
-                <li>Game Mode and Privacy Mode features are intended for personal, non-commercial use only.</li>
-            </ul>
-        </div>
+<section>
+  <h2>3. VIP Subscription and Payments</h2>
+  <div class="card">
+    <p style="margin-bottom:0">VIP purchases or subscriptions are processed entirely through <strong>Google Play Billing</strong> and are subject to Google Play's payment terms, auto-renewal, cancellation, and refund policies. We do not store your payment card details. To cancel a subscription or request a refund, please do so through your Google Play Store account.</p>
+  </div>
+</section>
 
-        <div class="section">
-            <h2>7. Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, Clean Game Turbo and its developers are provided "as-is" without warranties of any kind, either express or implied. We are not liable for:</p>
-            <ul>
-                <li>Device damage or data loss resulting from use of the App.</li>
-                <li>Game crashes, performance degradation, or other issues arising from Game Mode activation.</li>
-                <li>Network connectivity issues or internet blocking behavior related to Privacy Mode.</li>
-                <li>Loss of subscription or VIP access due to device loss, account compromise, or Google Play account issues.</li>
-                <li>Any indirect, incidental, consequential, or punitive damages arising from the App.</li>
-            </ul>
-        </div>
+<section>
+  <h2>4. Advertising</h2>
+  <p>The free version of the App displays ads through Google AdMob (banner, interstitial, app-open, and rewarded ads). VIP users may receive an ad-free experience as described within the App.</p>
+</section>
 
-        <div class="section">
-            <h2>8. Termination</h2>
-            <p>We reserve the right to suspend or terminate your access to the App if:</p>
-            <ul>
-                <li>You violate these Terms of Service.</li>
-                <li>You use the App for illegal purposes or to harm others.</li>
-                <li>You attempt to reverse-engineer, decompile, or bypass App security or billing protections.</li>
-            </ul>
-        </div>
+<section>
+  <h2>5. Acceptable Use</h2>
+  <p>You agree not to: (a) reverse-engineer or modify the App beyond what is permitted by applicable law; (b) use the App for any unlawful purpose; (c) interfere with or attempt to interfere with the security or functioning of the App.</p>
+</section>
 
-        <div class="section">
-            <h2>9. Modifications to Terms</h2>
-            <p>We may update these Terms of Service at any time. Changes will be effective immediately upon posting to this page. Your continued use of the App following any changes constitutes your acceptance of the new terms.</p>
-        </div>
+<section>
+  <h2>6. Disclaimer</h2>
+  <div class="warn">
+    Performance-optimization features (RAM cleaning, CPU adjustments) operate within the limits allowed by the Android operating system and device manufacturer. Results may vary depending on device type, and we <strong>do not guarantee</strong> any specific performance improvement on every device.
+  </div>
+  <p style="margin-top:14px">The App is provided "as is" without warranties of any kind, whether express or implied, including but not limited to warranties of fitness for a particular purpose.</p>
+</section>
 
-        <div class="section">
-            <h2>10. Contact</h2>
-            <p>For questions or concerns regarding these Terms of Service or the App, please contact us at <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a>.</p>
-        </div>
+<section>
+  <h2>7. Limitation of Liability</h2>
+  <p>To the extent permitted by applicable law, we are not liable for any indirect, incidental, or consequential damages arising from the use or inability to use the App, including data loss not directly caused by our own negligence.</p>
+</section>
 
-        <div class="section" style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px; color: #666; font-size: 0.9em;">
-            <p><strong>Important Note for Developers/Hosts:</strong> This Terms of Service document provides the baseline structure and legal framework for Clean Game Turbo. When hosting this page on GitHub Pages or another server, ensure it is accessible via HTTPS and matches the URL configured in the App's strings.xml file. This document should be reviewed by a lawyer familiar with your jurisdiction's laws before final deployment.</p>
-        </div>
-    </div>
+<section>
+  <h2>8. Third-Party Services</h2>
+  <p>The App uses third-party services (Google AdMob, Google Play Billing, Google UMP) that have their own terms of service and privacy policies, separate from these Terms.</p>
+</section>
+
+<section>
+  <h2>9. Changes to the Service and These Terms</h2>
+  <p>We may change, add to, or discontinue certain App features, and may update these Terms of Service from time to time. Continued use of the App after such changes constitutes your acceptance of the updated Terms.</p>
+</section>
+
+<section>
+  <h2>10. Termination</h2>
+  <p>You may stop using the App at any time by uninstalling it. We reserve the right to suspend access to certain features if misuse of the App is detected.</p>
+</section>
+
+<section>
+  <div class="contact">
+    <p style="margin-bottom:6px"><strong>Questions about these Terms of Service?</strong></p>
+    <p style="margin-bottom:0">Contact us at <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>© 2026 Clean Game Turbo. All rights reserved.</footer>
+
 </body>
 </html>
