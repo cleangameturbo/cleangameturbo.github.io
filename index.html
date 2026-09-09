@@ -1,183 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Clean Game Turbo</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #1a1a1a;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .last-updated {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 8px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 12px 0;
-        }
-        th, td {
-            text-align: left;
-            padding: 8px 10px;
-            border: 1px solid #ddd;
-            vertical-align: top;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Clean Game Turbo</title>
+<meta name="description" content="Privacy Policy for Clean Game Turbo, an Android game booster and cleaner app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0d10;
+    --surface:#13161b;
+    --surface-2:#181c22;
+    --border:#242932;
+    --text:#eef1f4;
+    --text-muted:#8d95a3;
+    --text-faint:#5b626e;
+    --accent:#2be3c2;
+    --accent-dim:#1a3733;
+    --warn:#ffb020;
+    --maxw:700px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+
+  .bg-glow{
+    position:fixed; inset:0; z-index:-1; pointer-events:none;
+    background:
+      radial-gradient(720px 420px at 84% -8%, rgba(43,227,194,0.14), transparent 60%),
+      radial-gradient(600px 380px at -10% 12%, rgba(43,227,194,0.06), transparent 55%);
+  }
+
+  .shell{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+    display:grid;
+    grid-template-columns:220px minmax(0,1fr);
+    gap:56px;
+  }
+
+  /* ---------- Hero ---------- */
+  header.hero{
+    max-width:1180px;
+    margin:0 auto;
+    padding:64px 24px 40px;
+  }
+  .mark{
+    width:44px;height:44px;margin-bottom:22px;
+  }
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Sora',sans-serif;font-weight:600;font-size:13px;
+    color:var(--accent);letter-spacing:0.02em;
+    margin-bottom:14px;
+  }
+  .kicker::before{
+    content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 4px var(--accent-dim);
+  }
+  h1{
+    font-family:'Sora',sans-serif;font-weight:700;
+    font-size:clamp(32px,5vw,44px);
+    line-height:1.12;letter-spacing:-0.01em;
+    margin:0 0 14px;
+    max-width:14ch;
+  }
+  .lede{
+    color:var(--text-muted);
+    font-size:17px;
+    max-width:56ch;
+    margin:0 0 22px;
+  }
+  .meta-row{
+    display:flex;flex-wrap:wrap;gap:10px;
+    font-size:13px;color:var(--text-faint);
+  }
+  .meta-pill{
+    border:1px solid var(--border);
+    background:var(--surface);
+    padding:6px 12px;border-radius:100px;
+  }
+
+  /* ---------- Sidebar / TOC ---------- */
+  nav.toc{
+    align-self:start;
+    position:sticky;top:32px;
+  }
+  nav.toc .toc-label{
+    font-family:'Sora',sans-serif;font-weight:600;font-size:12px;
+    color:var(--text-faint);margin-bottom:14px;
+  }
+  nav.toc ol{
+    list-style:none;margin:0;padding:0;
+    border-left:1px solid var(--border);
+  }
+  nav.toc li{margin:0;}
+  nav.toc a{
+    display:block;
+    color:var(--text-muted);
+    font-size:13.5px;
+    padding:7px 0 7px 16px;
+    margin-left:-1px;
+    border-left:1px solid transparent;
+    text-decoration:none;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  nav.toc a:hover{color:var(--text);border-left-color:var(--text-faint);}
+
+  details.toc-mobile{display:none;}
+
+  /* ---------- Main content ---------- */
+  main{min-width:0;padding-bottom:100px;}
+
+  section{
+    padding:34px 0;
+    border-bottom:1px solid var(--border);
+    scroll-margin-top:24px;
+  }
+  section:last-of-type{border-bottom:none;}
+
+  h2{
+    font-family:'Sora',sans-serif;font-weight:600;
+    font-size:21px;
+    letter-spacing:-0.01em;
+    margin:0 0 6px;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h2 .num{
+    color:var(--accent);
+    font-variant-numeric:tabular-nums;
+    font-size:14px;
+    font-weight:600;
+  }
+  h3{
+    font-family:'Sora',sans-serif;font-weight:600;
+    font-size:15.5px;
+    color:var(--text);
+    margin:22px 0 8px;
+  }
+  p{margin:12px 0;color:var(--text-muted);max-width:64ch;}
+  strong{color:var(--text);font-weight:600;}
+  ul, ol.plain{margin:12px 0;padding-left:20px;color:var(--text-muted);}
+  li{margin:7px 0;max-width:62ch;}
+  li::marker{color:var(--accent);}
+
+  .permit-table{
+    margin:16px 0 4px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  .permit-row{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:4px 18px;
+    padding:14px 16px;
+    border-top:1px solid var(--border);
+  }
+  .permit-row:first-child{border-top:none;background:var(--surface-2);}
+  .permit-row:first-child .permit-name, .permit-row:first-child .permit-why{
+    font-family:'Sora',sans-serif;font-weight:600;font-size:12px;color:var(--text-faint);
+  }
+  .permit-name{
+    font-family:'Sora',sans-serif;font-weight:600;font-size:13.5px;color:var(--text);
+  }
+  .permit-why{color:var(--text-muted);font-size:14px;}
+  @media (max-width:640px){
+    .permit-row{grid-template-columns:1fr;}
+  }
+
+  .callout{
+    border:1px solid var(--border);
+    border-left:3px solid var(--accent);
+    background:var(--surface);
+    border-radius:8px;
+    padding:14px 16px;
+    margin:16px 0;
+    font-size:14.5px;
+    color:var(--text-muted);
+  }
+  .callout strong{color:var(--text);}
+
+  .contact-card{
+    margin-top:8px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    border-radius:12px;
+    padding:22px 24px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;
+  }
+  .contact-card .label{font-size:13px;color:var(--text-faint);margin-bottom:4px;}
+  .contact-card .email{font-family:'Sora',sans-serif;font-weight:600;font-size:17px;}
+  .btn{
+    font-family:'Sora',sans-serif;font-weight:600;font-size:14px;
+    color:#0b0d10;background:var(--accent);
+    padding:10px 18px;border-radius:8px;
+    display:inline-block;
+  }
+  .btn:hover{text-decoration:none;filter:brightness(1.08);}
+
+  footer{
+    max-width:1180px;margin:0 auto;padding:28px 24px 60px;
+    color:var(--text-faint);font-size:13px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+  footer a{color:var(--text-faint);}
+  footer a:hover{color:var(--text-muted);}
+
+  .top-link{
+    display:inline-flex;align-items:center;gap:6px;
+    color:var(--text-faint);font-size:13px;margin-top:6px;
+  }
+
+  @media (max-width:900px){
+    .shell{grid-template-columns:1fr;gap:0;}
+    nav.toc{display:none;}
+    details.toc-mobile{
+      display:block;
+      margin:0 0 8px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:10px;
+      padding:2px 16px;
+    }
+    details.toc-mobile summary{
+      cursor:pointer;list-style:none;
+      font-family:'Sora',sans-serif;font-weight:600;font-size:13.5px;
+      padding:14px 0;color:var(--text);
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    details.toc-mobile summary::-webkit-details-marker{display:none;}
+    details.toc-mobile summary::after{content:"▾";color:var(--accent);}
+    details.toc-mobile[open] summary::after{content:"▴";}
+    details.toc-mobile ol{list-style:none;margin:0;padding:0 0 14px;}
+    details.toc-mobile a{display:block;padding:6px 0;color:var(--text-muted);font-size:14px;}
+    header.hero{padding:44px 24px 28px;}
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: August 2026</p>
+<div class="bg-glow"></div>
 
-        <div class="section">
-            <h2>1. Introduction</h2>
-            <p>This Privacy Policy explains how Clean Game Turbo ("the App", "we", "us") handles information when you use our Android application. We built the App to do as much as possible directly on your device, and we do not require you to create an account to use it.</p>
-        </div>
+<header class="hero">
+  <svg class="mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="22" cy="22" r="20" stroke="#242932" stroke-width="2"/>
+    <path d="M22 22 L22 8" stroke="#2be3c2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M22 22 L31 27" stroke="#2be3c2" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="22" cy="22" r="3" fill="#2be3c2"/>
+  </svg>
+  <div class="kicker">Privacy Policy</div>
+  <h1>How Clean Game Turbo handles your data</h1>
+  <p class="lede">Clean Game Turbo is a game booster and device‑cleaning app for Android. This page explains, permission by permission, what the app can see, what it does with it, and what stays on your device.</p>
+  <div class="meta-row">
+    <span class="meta-pill">Effective date: September 9, 2026</span>
+    <span class="meta-pill">Applies to: Clean Game Turbo (Android)</span>
+    <span class="meta-pill">Contact: support.cleangameturbo@gmail.com</span>
+  </div>
+</header>
 
-        <div class="section">
-            <h2>2. Information We Access</h2>
-            <p>The table below lists the device permissions the App may request and what each one is used for. Unless stated otherwise, this information stays on your device and is not collected, uploaded, or sold by us.</p>
-            <table>
-                <tr>
-                    <th>Permission</th>
-                    <th>Purpose</th>
-                </tr>
-                <tr>
-                    <td>Photos, videos &amp; audio files (media access)</td>
-                    <td>Used locally by the Storage &amp; Junk Cleaner to analyze storage usage by category. Files are read on-device only; they are never uploaded or transmitted off your device.</td>
-                </tr>
-                <tr>
-                    <td>Usage Access (App usage stats)</td>
-                    <td>Used to detect which app is currently in the foreground so Game Mode and Game Booster can apply per-game settings. Processed locally; no browsing or usage history is transmitted to us.</td>
-                </tr>
-                <tr>
-                    <td>Accessibility Service</td>
-                    <td>Used, only if you explicitly enable it, to detect the active window/app for Game Mode's automatic overlay behavior. It does not read, log, or transmit on-screen text, keystrokes, or content from other apps.</td>
-                </tr>
-                <tr>
-                    <td>Display over other apps (overlay)</td>
-                    <td>Used to show the in-game performance overlay (CPU, RAM, battery, FPS) during an active Game Mode session.</td>
-                </tr>
-                <tr>
-                    <td>Modify system settings</td>
-                    <td>Used to apply display/performance adjustments you request through Game Booster.</td>
-                </tr>
-                <tr>
-                    <td>Notifications</td>
-                    <td>Used to show status notifications for foreground services (e.g., an active boost or Game Mode session) and app alerts.</td>
-                </tr>
-                <tr>
-                    <td>Network state / Wi-Fi state / Internet</td>
-                    <td>Used to display network status in Device Info, and to load ads and verify VIP purchases, as described below.</td>
-                </tr>
-            </table>
-        </div>
+<div class="shell">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-we-collect">Data we collect</a></li>
+      <li><a href="#permissions">Permissions we request</a></li>
+      <li><a href="#how-we-use">How we use information</a></li>
+      <li><a href="#third-parties">Third‑party services</a></li>
+      <li><a href="#sharing">Data sharing</a></li>
+      <li><a href="#retention">Retention &amp; storage</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
 
-        <div class="section">
-            <h2>3. Information We Do Not Collect</h2>
-            <ul>
-                <li>We do not require or collect your name, email address, or any account registration information.</li>
-                <li>We do not read, upload, or transmit the contents of your photos, videos, or audio files.</li>
-                <li>We do not log keystrokes, screen content, or on-screen text from other apps, even when the Accessibility Service is enabled.</li>
-                <li>We do not sell your personal information to third parties.</li>
-            </ul>
-        </div>
+  <main>
+    <details class="toc-mobile">
+      <summary>On this page</summary>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-we-collect">Data we collect</a></li>
+        <li><a href="#permissions">Permissions we request</a></li>
+        <li><a href="#how-we-use">How we use information</a></li>
+        <li><a href="#third-parties">Third‑party services</a></li>
+        <li><a href="#sharing">Data sharing</a></li>
+        <li><a href="#retention">Retention &amp; storage</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#transfers">International transfers</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </details>
 
-        <div class="section">
-            <h2>4. Advertising</h2>
-            <p>The App displays ads through Google AdMob. AdMob and its partners may collect device identifiers (such as the Android Advertising ID), approximate location, and app interaction data to serve and measure ads, in accordance with their own privacy policies.</p>
-            <ul>
-                <li>Where required (for example, under GDPR in the European Economic Area and UK), the App presents a consent form (Google's User Messaging Platform) before showing personalized ads, and you can choose non-personalized ads or withdraw consent at any time from <strong>Settings &gt; Privacy Options</strong>.</li>
-                <li>We do not control how Google or its advertising partners use data collected through the ad SDK. You can review Google's practices at their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and manage ad personalization at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>.</li>
-            </ul>
-        </div>
+    <section id="overview">
+      <h2><span class="num">01</span>Overview</h2>
+      <p>Clean Game Turbo provides game‑session tools (Game Mode overlay, Game Booster), a storage and junk cleaner, photo/video/audio cleanup tools, and device‑info screens. Most of what the app does — scanning storage, showing device stats, applying booster settings — happens entirely on your device and is never sent to us.</p>
+      <p>The app does show ads through Google AdMob and sells a VIP subscription through Google Play Billing, and those two services do collect some data on their own behalf, as described below. This policy tells you exactly which permissions unlock which feature, and what each one does and doesn't do with your data.</p>
+    </section>
 
-        <div class="section">
-            <h2>5. VIP Subscription &amp; Purchases</h2>
-            <p>VIP purchases are processed entirely through Google Play Billing. We do not receive or store your payment card details. Google may process purchase and account information according to its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> in order to verify and manage your subscription.</p>
-        </div>
+    <section id="data-we-collect">
+      <h2><span class="num">02</span>Data we collect</h2>
 
-        <div class="section">
-            <h2>6. Data Storage &amp; Retention</h2>
-            <ul>
-                <li>App preferences, VIP/Game Mode settings, and per-game configurations are stored locally on your device.</li>
-                <li>Storage analysis results and device metrics (CPU, RAM, battery, network) are computed on-device and are not sent to our servers.</li>
-                <li>Uninstalling the App removes locally stored app data from your device.</li>
-            </ul>
-        </div>
+      <h3>Media you choose to clean up</h3>
+      <p>When you open the Photo, Video, or Audio cleaner, the app reads your media library on‑device to find junk, duplicates, and large files, and shows you what it found so you can decide what to delete. Files are never uploaded, copied off your device, or transmitted to us or anyone else.</p>
 
-        <div class="section">
-            <h2>7. Data Sharing</h2>
-            <p>We do not share personal information with third parties, except:</p>
-            <ul>
-                <li>With Google AdMob/UMP for ad delivery and consent management, as described in Section 4.</li>
-                <li>With Google Play Billing for subscription processing, as described in Section 5.</li>
-                <li>Where required to comply with a legal obligation, court order, or governmental request.</li>
-            </ul>
-        </div>
+      <h3>Notifications, during Game Mode only</h3>
+      <p>If you grant Notification Access, it is used solely to apply Do Not Disturb / notification‑filtering behavior while a Game Mode session you started is active. The app does not read, log, store, or transmit the content of your notifications.</p>
 
-        <div class="section">
-            <h2>8. Children's Privacy</h2>
-            <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, please contact us so we can address it.</p>
-        </div>
+      <h3>Foreground app signal</h3>
+      <p>The Usage Access permission lets the app detect which app is currently in the foreground, so features like the game picker and the Game Mode watchdog can recognize when a game you've configured is running. This is processed on‑device in real time and is not recorded into a history or sent to us.</p>
 
-        <div class="section">
-            <h2>9. Your Choices</h2>
-            <ul>
-                <li>You can grant or revoke any Android permission (storage, usage access, accessibility, overlay, notifications) at any time from your device's Settings app.</li>
-                <li>You can manage ad personalization consent at any time from <strong>Settings &gt; Privacy Options</strong> within the App.</li>
-                <li>You can manage or cancel your VIP subscription at any time through Google Play &gt; Subscriptions.</li>
-            </ul>
-        </div>
+      <h3>Device and performance stats</h3>
+      <p>CPU, RAM, battery, temperature, and network information shown in Device Info, Battery, and Network screens is read from the Android system to display to you. It is not transmitted off your device by us.</p>
 
-        <div class="section">
-            <h2>10. Security</h2>
-            <p>We rely on Android's platform security model and standard secure development practices. No method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
-        </div>
+      <h3>Advertising and installed‑app identifiers</h3>
+      <p>Google AdMob (and, where required, Google's User Messaging Platform for consent) collects an advertising identifier and device information to show and measure ads. A scoped app‑query is used to list your launchable apps only inside the in‑app game picker; the app does not have broad visibility into every app on your device.</p>
 
-        <div class="section">
-            <h2>11. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Changes will be effective immediately upon posting to this page, and we will update the "Last Updated" date above.</p>
-        </div>
+      <h3>Purchase information</h3>
+      <p>VIP subscription purchases are processed entirely by Google Play Billing. We receive confirmation of your subscription status, not your payment card or billing details.</p>
+    </section>
 
-        <div class="section">
-            <h2>12. Contact</h2>
-            <p>For questions or concerns regarding this Privacy Policy or the App, please contact us at <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a>.</p>
+    <section id="permissions">
+      <h2><span class="num">03</span>Permissions we request</h2>
+      <p>Android requires apps to declare each permission up front. Here is what each one unlocks and why the app asks for it.</p>
+      <div class="permit-table">
+        <div class="permit-row">
+          <div class="permit-name">Permission</div>
+          <div class="permit-why">What it's for</div>
         </div>
+        <div class="permit-row">
+          <div class="permit-name">Photos, videos, audio</div>
+          <div class="permit-why">Powers the Storage, Photo, Video, and Audio cleaners. Read locally, never uploaded.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Notification access</div>
+          <div class="permit-why">Applies Do Not Disturb / filtering only during a Game Mode session you start.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Usage access (app stats)</div>
+          <div class="permit-why">Detects the current foreground app for the game picker and Game Mode watchdog.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Display over other apps</div>
+          <div class="permit-why">Draws the optional Game Mode performance overlay and crosshair overlay on top of your game.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Modify system settings</div>
+          <div class="permit-why">Lets Game Booster adjust screen brightness during a session, at your request.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Post notifications</div>
+          <div class="permit-why">Shows the app's own status and boost‑result notifications.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Foreground service, wake lock</div>
+          <div class="permit-why">Keeps a Game Mode session running reliably while your game is open.</div>
+        </div>
+        <div class="permit-row">
+          <div class="permit-name">Network / Wi‑Fi state</div>
+          <div class="permit-why">Reads connection status for the Network Info screen and to load ads.</div>
+        </div>
+      </div>
+      <p>You can review or revoke any of these at any time in Android Settings → Apps → Clean Game Turbo → Permissions. Turning a permission off disables the related feature but does not affect the rest of the app.</p>
+    </section>
 
-        <div class="section" style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px; color: #666; font-size: 0.9em;">
-            <p><strong>Important Note for Developers/Hosts:</strong> This Privacy Policy provides the baseline structure for Clean Game Turbo based on the permissions and third-party SDKs (Google AdMob/UMP, Google Play Billing) currently used in the App. When hosting this page on GitHub Pages or another server, ensure it is accessible via HTTPS and matches the URL configured in the App's strings.xml file (currently <code>vip_privacy_policy_url</code>). This document should be reviewed by a lawyer familiar with your jurisdiction's laws (e.g., GDPR, CCPA) before final deployment, and updated any time the App's permissions or SDKs change.</p>
+    <section id="how-we-use">
+      <h2><span class="num">04</span>How we use information</h2>
+      <ul>
+        <li>To run the feature you opened — cleaning, boosting, or displaying device info.</li>
+        <li>To detect the foreground app so Game Mode and the game picker work correctly.</li>
+        <li>To apply notification filtering during a Game Mode session you turned on.</li>
+        <li>To serve and measure ads, and to verify and restore your VIP subscription, through Google's SDKs.</li>
+        <li>To diagnose crashes and improve app stability.</li>
+      </ul>
+      <p>We do not use your media, notifications, or usage data to build an advertising profile of you, and we do not sell that data.</p>
+    </section>
+
+    <section id="third-parties">
+      <h2><span class="num">05</span>Third‑party services</h2>
+      <p>Clean Game Turbo relies on the following Google services to operate:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> — serves banner, interstitial, rewarded, and app‑open ads, and collects advertising identifiers and device data under its own privacy policy.</li>
+        <li><strong>Google User Messaging Platform (UMP)</strong> — shows a consent form to users in the EEA, UK, and other regions that require it, before any ad request is made.</li>
+        <li><strong>Google Play Billing</strong> — processes VIP subscription purchases and renewals.</li>
+      </ul>
+      <div class="callout"><strong>Note:</strong> Data handled by these Google services is governed by Google's own privacy policy, available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</div>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="num">06</span>Data sharing</h2>
+      <p>We do not sell your personal data. We share data only with the third‑party services listed above, strictly so they can perform the function you're using (showing an ad, processing a purchase, gathering consent) — and, if ever required, to comply with a valid legal request.</p>
+    </section>
+
+    <section id="retention">
+      <h2><span class="num">07</span>Retention &amp; storage</h2>
+      <p>Most data the app touches — media metadata, device stats, usage‑access signals — is processed in memory on your device and is not retained by us in any form. Local app preferences (such as your Game Mode settings per game and VIP status cache) are stored on your device and removed when you uninstall the app. Data collected by Google's SDKs is retained according to Google's own retention policies.</p>
+    </section>
+
+    <section id="choices">
+      <h2><span class="num">08</span>Your choices</h2>
+      <ul>
+        <li><strong>Permissions:</strong> grant or revoke any permission at any time in Android Settings.</li>
+        <li><strong>Ad personalization:</strong> reset or opt out of your advertising ID under Android Settings → Privacy → Ads.</li>
+        <li><strong>Consent (EEA/UK):</strong> reopen the privacy‑options / consent form from the app's Settings screen at any time.</li>
+        <li><strong>Subscription:</strong> manage or cancel VIP through the Google Play Store subscriptions page.</li>
+        <li><strong>Uninstall:</strong> removing the app deletes all locally stored app data from your device.</li>
+      </ul>
+      <p>Depending on where you live, you may also have rights to access, correct, delete, or export your data (for example under the GDPR or CCPA/CPRA). Contact us using the details below to make a request.</p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">09</span>Children's privacy</h2>
+      <p>Clean Game Turbo is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, contact us and we will take steps to delete it.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">10</span>Security</h2>
+      <p>We rely on Android's standard app sandboxing and permission model, and on the security practices of Google's SDKs, to protect data the app handles. No method of storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section id="transfers">
+      <h2><span class="num">11</span>International transfers</h2>
+      <p>Where Google's services process data outside your country (for ads, billing, or consent), that transfer is governed by Google's own safeguards and privacy policy.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">12</span>Changes to this policy</h2>
+      <p>We may update this policy as the app's features change. Updates take effect as soon as they're posted here, and the "Effective date" above will reflect the latest revision. Continuing to use the app after a change means you accept the updated policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">13</span>Contact us</h2>
+      <p>Questions about this policy or how your data is handled? Reach out any time.</p>
+      <div class="contact-card">
+        <div>
+          <div class="label">Email support</div>
+          <div class="email">support.cleangameturbo@gmail.com</div>
         </div>
-    </div>
+        <a class="btn" href="mailto:support.cleangameturbo@gmail.com">Send an email</a>
+      </div>
+      <a class="top-link" href="#overview">↑ Back to top</a>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <span>© 2026 Clean Game Turbo. All rights reserved.</span>
+  <span><a href="terms-of-service.html">Terms of Service</a> · <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a></span>
+</footer>
+
 </body>
 </html>
