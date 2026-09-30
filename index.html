@@ -1,191 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Clean Game Turbo</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #1a1a1a;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .last-updated {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 8px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 12px 0;
-        }
-        th, td {
-            text-align: left;
-            padding: 8px 10px;
-            border-bottom: 1px solid #e2e2e2;
-            font-size: 0.95em;
-            vertical-align: top;
-        }
-        th {
-            background-color: #fafafa;
-        }
-        code {
-            background-color: #f0f0f0;
-            padding: 1px 6px;
-            border-radius: 4px;
-            font-size: 0.92em;
-        }
-        a {
-            color: #1565C0;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Game Turbo – Privacy Policy</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;line-height:1.65;max-width:900px;margin:0 auto;padding:28px;color:#202124;background:#fff}h1,h2{color:#172033}h1{font-size:30px}h2{margin-top:30px}a{color:#1769aa}.box{background:#f5f7fa;padding:16px;border-radius:10px}.muted{color:#5f6368}</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: September 2026</p>
+<h1>Privacy Policy – Clean Game Turbo</h1>
+<p class="muted"><strong>Effective date:</strong> September 30, 2026</p>
+<p>This Privacy Policy explains how Clean Game Turbo (“the App”), published by <strong>Kamal tech</strong>, handles information when you use the App.</p>
 
-        <div class="section">
-            <h2>1. Overview</h2>
-            <p>This Privacy Policy explains how Clean Game Turbo ("the App", "we") handles information when you use the App. Clean Game Turbo has <strong>no backend server and no user accounts</strong> — the App does not operate any database or server that stores your personal data. Everything the App reads about your device is processed locally, on your device, except where explicitly noted below for advertising and billing, which are handled by Google's own services.</p>
-        </div>
+<h2>1. Information and data handled by the App</h2>
+<p>Clean Game Turbo is designed to work primarily on your Android device. The App does not require you to create an account or provide your name, address, or other profile information to use its core features.</p>
+<p>Depending on the features you use, the App may access or process:</p>
+<ul>
+<li>Device information needed to display CPU frequency, battery level, battery temperature, volume, brightness, or other device status information.</li>
+<li>Information about games that you choose to add to the App, such as the game name and package identifier, so the App can launch the selected game and apply your saved settings.</li>
+<li>Photos, videos, audio, and other media information when you explicitly use the Cleaner/Storage features to review or delete selected media.</li>
+<li>Information required to operate Android overlay, notification, Do Not Disturb, screen, and system-setting features when you grant the corresponding Android permissions.</li>
+</ul>
 
-        <div class="section">
-            <h2>2. Information We Access, and Why</h2>
-            <table>
-                <tr><th>Data / Permission</th><th>Purpose</th><th>Leaves your device?</th></tr>
-                <tr>
-                    <td>Photos, videos, audio files (<code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code> / <code>READ_MEDIA_VISUAL_USER_SELECTED</code>)</td>
-                    <td>Lets the Cleaner list your media by name, size, and date so you can review and choose what to delete (including duplicate detection). Video/photo thumbnails are rendered locally for preview.</td>
-                    <td>No — read and displayed on-device only.</td>
-                </tr>
-                <tr>
-                    <td>Deleting selected media</td>
-                    <td>When you choose to delete photos, videos, or audio, the App requests deletion through Android's own system confirmation dialog (<code>MediaStore.createDeleteRequest</code>). The App cannot delete media without this system-level confirmation, and cannot access files belonging to other apps.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>App's own cache/junk files</td>
-                    <td>The Cleaner also scans and removes Clean Game Turbo's own temporary/cache files to free up space.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Usage Access (<code>PACKAGE_USAGE_STATS</code>)</td>
-                    <td>Used only to detect, in real time, when you leave the game you're currently boosting, so the Game Mode overlay/session can close automatically. Reads which app is currently in the foreground; does not read browsing history, in-app content, or any other app's data.</td>
-                    <td>No — checked locally, not logged or stored</td>
-                </tr>
-                <tr>
-                    <td>Notification access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>)</td>
-                    <td>Only active while you are in an active Game Mode session <em>and</em> have separately turned on "Block Notifications" for that specific game. When active, the App compares the sender's package name against your own app and, if different, dismisses that notification — it does not read, log, or transmit notification text/content.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Display over other apps (<code>SYSTEM_ALERT_WINDOW</code>)</td>
-                    <td>Powers the optional, VIP-only Game Mode overlay (FPS/RAM/CPU/battery/temperature widget) shown on top of a game you have manually enabled it for.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Modify system settings (<code>WRITE_SETTINGS</code>) / Do Not Disturb access (<code>ACCESS_NOTIFICATION_POLICY</code>)</td>
-                    <td>Used to apply the performance/Do Not Disturb settings you choose for a game session, and to revert them when the session ends.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Installed apps with a launcher entry (<code>&lt;queries&gt;</code> for <code>ACTION_MAIN</code>/<code>LAUNCHER</code>)</td>
-                    <td>Powers the "Add Games" picker so you can choose which installed games get a Game Mode profile. The App does not use broad package-visibility (<code>QUERY_ALL_PACKAGES</code>) — only apps with a launcher icon are visible to it.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Device performance stats (RAM, CPU, battery, temperature, storage, network status)</td>
-                    <td>Shown in Device Info / Game Booster screens, sourced from the Android system.</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Network state (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>) / Internet access</td>
-                    <td>Used to display network status, and required for loading ads (see below).</td>
-                    <td>Only as needed for ad requests (see §3)</td>
-                </tr>
-                <tr>
-                    <td>Notifications you receive from the App (<code>POST_NOTIFICATIONS</code>)</td>
-                    <td>Lets the App show its own status/foreground-service notifications to you (Android 13+ requirement).</td>
-                    <td>No</td>
-                </tr>
-            </table>
-        </div>
+<h2>2. Advertising</h2>
+<p>The App may display advertisements using Google Mobile Ads (AdMob). Google and its advertising partners may process device or advertising information according to their own policies and the choices available through the App and Android/Google settings.</p>
+<p>Where required, the App uses Google's consent mechanisms to request and manage consent for personalized advertising.</p>
 
-        <div class="section">
-            <h2>3. Advertising</h2>
-            <p>Free-tier use of the App is supported by ads served through <strong>Google AdMob</strong> (banner, interstitial, app-open, and rewarded ad formats). Google may collect an advertising identifier and other data as described in <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's Partner Policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
-            <p>For users in the EEA, UK, and Switzerland, the App uses Google's <strong>User Messaging Platform (UMP)</strong> to request consent before any ad is requested, in line with GDPR. You can review or withdraw your ad consent choice at any time from <strong>Settings → Privacy Options</strong> inside the App.</p>
-            <p><strong>VIP subscribers do not see ads</strong> — subscribing through Google Play Billing disables all ad formats in the App in addition to unlocking Game Mode.</p>
-        </div>
+<h2>3. In-app purchases and subscriptions</h2>
+<p>VIP subscriptions are processed through Google Play Billing. The App does not receive or store your full payment-card details. Purchase and subscription information is processed by Google Play to complete purchases, restore purchases, and verify your VIP entitlement.</p>
 
-        <div class="section">
-            <h2>4. Purchases &amp; Billing</h2>
-            <p>VIP subscription purchases are processed entirely by <strong>Google Play Billing</strong>. The App does not collect, see, or store your payment details (card numbers, billing address, etc.) — that information is handled directly between you and Google Play. The App only receives a purchase/entitlement status from Google's Billing Library to unlock VIP features.</p>
-        </div>
+<h2>4. Permissions</h2>
+<p>The App may request Android permissions or special access only when a feature requires them. Depending on your use of the App, these may include:</p>
+<ul>
+<li>Display over other apps – for the optional in-game Game Mode overlay.</li>
+<li>Notification access – for notification-related Game Mode features when enabled by you.</li>
+<li>Do Not Disturb access – for Focus/Silent Notification features when enabled by you.</li>
+<li>Modify system settings – for supported brightness, volume, or related controls.</li>
+<li>Storage/media access – for Cleaner and media-management features.</li>
+<li>Notifications – for App notifications where enabled.</li>
+<li>Foreground service access – to keep the user-started Game Mode session and overlay running while an active gaming session is in progress.</li>
+</ul>
+<p>You can deny optional permissions, although the related feature may not work.</p>
 
-        <div class="section">
-            <h2>5. Data We Do Not Collect</h2>
-            <ul>
-                <li>We do not require or use a user account, sign-in, or profile.</li>
-                <li>We do not upload, back up, or transmit your photos, videos, or audio files to any server.</li>
-                <li>We do not read the content of your notifications — only the sending app's package name, and only during an active, user-enabled Game Mode session.</li>
-                <li>We do not sell your data.</li>
-            </ul>
-        </div>
+<h2>5. How information is used</h2>
+<p>Information accessed on the device is used to provide the feature you requested, such as launching a selected game, showing device status, controlling supported settings, displaying an overlay, or helping you review and manage storage/media.</p>
+<p>The App does not use device information to modify the code, memory, or internal files of another game, and it does not provide tools intended to cheat or gain an unfair gameplay advantage.</p>
 
-        <div class="section">
-            <h2>6. Data Retention &amp; Security</h2>
-            <p>Because the App has no backend, there is no remotely stored copy of your data to retain or delete on request — uninstalling the App removes all of its local settings and cache. Media you deleted through the Cleaner is removed by Android itself and cannot be recovered by us or by you.</p>
-        </div>
+<h2>6. Data sharing</h2>
+<p>The App does not sell your personal information. Information may be processed by service providers that are necessary to operate the App, including Google services used for advertising, consent management, and Google Play purchases. Android system components may also process information according to your device settings and Google's/Android's applicable policies.</p>
 
-        <div class="section">
-            <h2>7. Children's Privacy</h2>
-            <p>Clean Game Turbo is a general-audience utility app and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us using the details below.</p>
-        </div>
+<h2>7. Data retention</h2>
+<p>Settings and locally required app data may remain on your device until you change them, clear the App's data, or uninstall the App. Purchase entitlement information may be synchronized with Google Play when needed to restore or verify your subscription.</p>
 
-        <div class="section">
-            <h2>8. Your Choices</h2>
-            <ul>
-                <li>Any permission listed in §2 can be revoked at any time from Android Settings → Apps → Clean Game Turbo → Permissions; the App will simply be unable to perform the related feature until re-granted.</li>
-                <li>Ad consent can be reviewed or withdrawn anytime via Settings → Privacy Options in the App.</li>
-                <li>Uninstalling the App removes all of its locally stored settings.</li>
-            </ul>
-        </div>
+<h2>8. Children's privacy</h2>
+<p>Clean Game Turbo is not specifically directed at children. We do not knowingly request personal information from children. If you believe a child has provided personal information to the App, please contact us using the contact information below.</p>
 
-        <div class="section">
-            <h2>9. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Changes take effect as soon as they are posted to this page. Continued use of the App after changes are posted constitutes acceptance of the updated policy.</p>
-        </div>
+<h2>9. Security</h2>
+<p>We take reasonable measures to limit access to information used by the App. However, no electronic storage or transmission method can be guaranteed to be completely secure.</p>
 
-        <div class="section">
-            <h2>10. Contact</h2>
-            <p>Questions about this Privacy Policy or your data can be sent to <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a>.</p>
-        </div>
-    </div>
+<h2>10. Third-party services</h2>
+<p>The App may rely on Google services such as Google Play Billing, Google Mobile Ads, and Google's consent technology. Their handling of information is governed by their respective policies and terms.</p>
+
+<h2>11. Changes to this Privacy Policy</h2>
+<p>We may update this Privacy Policy when the App, its features, or applicable requirements change. The updated version will show a new effective date.</p>
+
+<h2>12. Contact</h2>
+<p>If you have questions about this Privacy Policy or the App's privacy practices, contact:</p>
+<p><strong>Developer:</strong> Kamal tech<br>
+<strong>Email:</strong> [support.cleangameturbo@gmail.com]</p>
+
+<div class="box"><strong>Note:</strong> Replace <code>[ISI EMAIL PENGEMBANG]</code> with the support email you actually use before publishing this policy.</div>
 </body>
 </html>
