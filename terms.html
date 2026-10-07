@@ -1,347 +1,89 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Clean Game Turbo - Terms of Service</title>
-
-    <style>
-        body {
-            margin: 0;
-            background: #0b0f14;
-            color: #e9eef5;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px 60px;
-        }
-
-        .content {
-            background: #121923;
-            border: 1px solid #253244;
-            border-radius: 16px;
-            padding: 30px;
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 32px;
-        }
-
-        h2 {
-            margin-top: 32px;
-            color: #ffffff;
-        }
-
-        p, li {
-            color: #b8c2ce;
-        }
-
-        a {
-            color: #66b3ff;
-        }
-
-        .date {
-            color: #8e9baa;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #253244;
-            color: #7f8b98;
-            font-size: 13px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of Service for Clean Game Turbo Android app.">
+  <title>Terms of Service — Clean Game Turbo</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; padding: 24px; background: #f4f6f8; color: #1f2937; font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 32px; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px #18223012; }
+    h1, h2, h3 { color: #111827; line-height: 1.25; }
+    h1 { margin-top: 0; }
+    h2 { margin-top: 2rem; padding-bottom: .35rem; border-bottom: 1px solid #e5e7eb; }
+    .date, .note { color: #4b5563; }
+    .note { padding: 14px 16px; border-left: 4px solid #2563eb; background: #eff6ff; }
+    a { color: #1d4ed8; }
+    li { margin: .45rem 0; }
+    @media (max-width: 600px) { body { padding: 12px; } main { padding: 20px; } }
+  </style>
 </head>
-
 <body>
+<main>
+  <h1>Terms of Service</h1>
+  <p class="date"><strong>Clean Game Turbo</strong><br>Last updated: October 7, 2026</p>
 
-<div class="container">
-<div class="content">
+  <h2>1. Using the App</h2>
+  <p>These Terms apply when you download, install, or use Clean Game Turbo (the “App”). If you do not agree, do not use the App. The App does not provide an in-app account or sign-in.</p>
 
-<h1>Terms of Service</h1>
+  <h2>2. What the App does</h2>
+  <p>Clean Game Turbo is an Android game launcher and device utility. Its current features include:</p>
+  <ul>
+    <li><strong>Game list and launch:</strong> add launchable apps to the list and open a selected app.</li>
+    <li><strong>Game-session settings:</strong> apply selected device settings such as screen brightness, media/ringtone volume, and Do Not Disturb, subject to Android permissions and device support.</li>
+    <li><strong>Game Mode overlay:</strong> a per-game, VIP feature that can display the App’s control panel over a game after you enable it and grant overlay permission. The panel may show device-level information and includes an optional control to keep the display awake while the overlay is active.</li>
+    <li><strong>Auto Game Mode:</strong> an optional VIP feature that detects a registered game entering the foreground when enabled and when Usage Access is granted.</li>
+    <li><strong>Gaming history and statistics:</strong> locally recorded session duration, launch count, battery readings, battery-temperature readings, and system-wide RAM-use readings. These are not measurements of the game’s own FPS, CPU/GPU use, or memory allocation.</li>
+    <li><strong>Cleaner:</strong> review media and app-owned temporary files, find large or duplicate media, and choose items for deletion. The App may also show launchable apps and open Android’s standard app-uninstall flow.</li>
+    <li><strong>Device information:</strong> view selected hardware, battery, storage, and network information reported by Android.</li>
+    <li><strong>Service notifications:</strong> Android may display the App’s own notification while a foreground service is active, subject to Android notification settings and permission.</li>
+  </ul>
+  <p>The App does not modify game code, report in-game FPS, tune a game’s CPU/GPU, or free RAM or clear private cache belonging to another app. Displayed device readings are system-level readings.</p>
 
-<div class="date">
-    Clean Game Turbo<br>
-    Package name: com.cleangameturbo.pro<br>
-    Effective date: October 5, 2026
-</div>
+  <h2>3. Permissions and system settings</h2>
+  <p>Some features require permissions or special access that you grant through Android, including access to selected media, Usage Access, Notification Access, overlay permission, permission to modify system settings, or Do Not Disturb access. You can decline or revoke access in Android Settings; the related feature may then be unavailable or limited.</p>
+  <p>When you enable session controls, changes such as brightness or volume can affect the device outside the selected game. The App’s current session cleanup attempts to restore saved brightness and volume values. For Do Not Disturb, the current code sets Android’s interruption filter to “All” when a session ends; it does not restore a previous custom filter. Check your device’s Do Not Disturb setting after a session if you had a custom filter enabled. Android behavior can vary by version and device.</p>
+  <p>The optional screen-awake control works while the Game Mode overlay is active and may use additional battery power.</p>
 
-<p>
-These Terms of Service ("Terms") govern your use of Clean Game
-Turbo ("the App").
-</p>
+  <h2>4. Cleaner and deletion</h2>
+  <ul>
+    <li>The App may directly remove cache and selected temporary files owned by Clean Game Turbo. It does not clear another app’s private cache or RAM.</li>
+    <li>For photos, videos, or audio in Android’s shared media library, you choose the items and the App requests deletion through Android’s system confirmation flow. The App does not silently delete those media items.</li>
+    <li>Duplicate detection compares media locally on the device. The App does not upload scanned media to a developer-operated server.</li>
+    <li>The App has no undo for a completed deletion. Android or your media app may or may not provide a recovery option; the App cannot guarantee recovery.</li>
+    <li>If you choose to uninstall another app, the App opens Android’s uninstall flow. Android controls the confirmation and uninstall operation.</li>
+  </ul>
+  <p>Review your choices carefully before confirming deletion or uninstalling an app.</p>
 
-<p>
-By installing or using Clean Game Turbo, you agree to these Terms.
-If you do not agree with these Terms, please do not use the App.
-</p>
+  <h2>5. Advertising, VIP, and Google Play Billing</h2>
+  <p>The App integrates Google Mobile Ads and Google UMP. Google handles its advertising, consent, and related data processing under Google’s own policies. The App also uses Google Play Billing to display subscription products and verify subscription entitlement. Subscription prices, billing periods, renewal, cancellation, and purchase conditions are those shown by Google Play at the time of purchase. Manage or cancel a subscription in Google Play; uninstalling the App does not cancel it.</p>
+  <p>VIP features are enabled when the App’s entitlement check recognizes an active Google Play purchase. The App caches a VIP status locally and checks subscription status through Google Play Billing.</p>
+  <p class="note"><strong>Advertising limitation in this app version:</strong> the VIP screen advertises an “Ad-Free Experience,” but the Home screen’s post-scan interstitial path in the current source does not check VIP status before requesting/showing an ad. Therefore, this version may still request or show an ad when VIP is active. Do not treat this Terms page as a guarantee that every ad placement is suppressed. The App’s current code also does not check UMP consent state on that specific Home-screen request path; this should be corrected before claiming that all ad requests wait for consent.</p>
 
-<h2>1. Description of the Service</h2>
+  <h2>6. Data and Privacy</h2>
+  <p>Local processing, session-history storage, permissions, and Google service data are described in the <a href="index.html">Privacy Policy</a>. Please review it before using the relevant features.</p>
 
-<p>
-Clean Game Turbo is an Android utility application providing
-gaming-related and device-management tools.
-</p>
+  <h2>7. Availability and limitations</h2>
+  <p>Feature availability depends on Android permissions, device and operating-system behavior, Google Play services, and third-party apps. The App is not affiliated with or endorsed by the games or apps you add. It does not guarantee better game performance, higher FPS, lower temperatures, improved battery life, or a particular amount of storage reclaimed. The App may not operate continuously if Android or the device stops its background service.</p>
 
-<p>
-Depending on your device, Android version, permissions, and
-subscription status, features may include:
-</p>
+  <h2>8. Your responsibilities</h2>
+  <ul>
+    <li>Use the App lawfully and only grant permissions you are comfortable granting.</li>
+    <li>Choose and review media or apps before approving deletion or uninstall actions in Android.</li>
+    <li>Manage Google Play subscriptions and payment methods through Google Play.</li>
+    <li>Do not use the App to infringe another person’s rights or interfere with another person’s device or data.</li>
+  </ul>
 
-<ul>
-    <li>Game selection and game management.</li>
-    <li>Gaming Mode.</li>
-    <li>Auto Game Mode.</li>
-    <li>Gaming overlays.</li>
-    <li>Storage analysis and cleaning tools.</li>
-    <li>Device information.</li>
-    <li>Network information and latency measurement.</li>
-    <li>Gaming-session history and statistics.</li>
-    <li>Notification-control features.</li>
-</ul>
+  <h2>9. Disclaimer and liability</h2>
+  <p>The App is provided on an “as available” basis. To the extent permitted by applicable law, no guarantee is made that every feature will be uninterrupted, error-free, or compatible with every device. Nothing in these Terms limits consumer rights or other protections that cannot legally be excluded in your jurisdiction. To the extent permitted by law, the developer is not responsible for loss arising from a deletion or system-setting change that you chose and confirmed, or from behavior of Android, Google Play, Google Mobile Ads, or a third-party app.</p>
 
-<h2>2. Permissions</h2>
+  <h2>10. Changes to these Terms</h2>
+  <p>These Terms may be revised when the App or its services change. The latest version and its effective date will be published at the App’s Terms of Service link. Any change will be subject to applicable law.</p>
 
-<p>
-Some features require Android permissions or special access.
-You may choose whether to grant these permissions.
-</p>
-
-<p>
-If a required permission is denied or revoked, the associated
-feature may not function correctly.
-</p>
-
-<h2>3. Storage and Cleaning Features</h2>
-
-<p>
-Some features may identify files, cache, temporary files,
-duplicates, or other storage information that may be suitable
-for removal.
-</p>
-
-<p>
-You are responsible for reviewing files before deleting them and
-for keeping backups of important information.
-</p>
-
-<p>
-Clean Game Turbo does not guarantee that every file identified by
-a scan is safe to delete in every situation.
-</p>
-
-<h2>4. Gaming Performance</h2>
-
-<p>
-Clean Game Turbo provides tools intended to assist with gaming
-and device management.
-</p>
-
-<p>
-The App does not guarantee:
-</p>
-
-<ul>
-    <li>A specific FPS.</li>
-    <li>A specific ping or latency.</li>
-    <li>A specific temperature reduction.</li>
-    <li>A specific battery-life improvement.</li>
-    <li>Higher performance on every device.</li>
-    <li>Compatibility with every game or Android device.</li>
-</ul>
-
-<p>
-Actual results depend on your device hardware, Android version,
-game, network connection, thermal conditions, background
-processes, and other factors.
-</p>
-
-<h2>5. VIP Subscriptions</h2>
-
-<p>
-Clean Game Turbo may offer optional VIP subscriptions through
-Google Play Billing.
-</p>
-
-<p>
-Available plans may include weekly and monthly subscriptions.
-Prices shown in the App are supplied by Google Play and may vary
-by country, currency, taxes, promotions, and eligibility.
-</p>
-
-<p>
-Google Play is responsible for processing subscription payments.
-Clean Game Turbo does not directly process your credit-card or
-banking credentials.
-</p>
-
-<p>
-Subscription renewal, cancellation, refunds, and payment
-management are handled through Google Play according to the
-applicable Google Play terms and policies.
-</p>
-
-<p>
-Uninstalling Clean Game Turbo does not automatically cancel an
-active Google Play subscription.
-</p>
-
-<h2>6. Advertising</h2>
-
-<p>
-The free version of Clean Game Turbo may display advertisements
-provided by Google AdMob.
-</p>
-
-<p>
-Advertising availability may vary depending on region, consent,
-device, and other factors.
-</p>
-
-<h2>7. Acceptable Use</h2>
-
-<p>
-You agree not to:
-</p>
-
-<ul>
-    <li>Use the App for unlawful purposes.</li>
-    <li>Attempt to bypass Google Play payment or subscription systems.</li>
-    <li>Modify or tamper with the App for unauthorized purposes.</li>
-    <li>Redistribute modified versions without authorization.</li>
-    <li>Use the App to interfere with another person's device or data without permission.</li>
-    <li>Misrepresent Clean Game Turbo as an official Google, Android, or game-publisher application.</li>
-</ul>
-
-<h2>8. Third-Party Games and Services</h2>
-
-<p>
-Clean Game Turbo is an independent application.
-</p>
-
-<p>
-Unless explicitly stated otherwise, Clean Game Turbo is not
-affiliated with, sponsored by, or endorsed by Google, Android,
-or third-party game publishers.
-</p>
-
-<p>
-Third-party games and services are governed by their own terms,
-licenses, and privacy policies.
-</p>
-
-<h2>9. Intellectual Property</h2>
-
-<p>
-Clean Game Turbo and its original software, interface, branding,
-and developer-created content are protected by applicable
-intellectual-property laws.
-</p>
-
-<p>
-You receive a limited right to use the App in accordance with
-these Terms and the applicable Google Play license terms.
-</p>
-
-<h2>10. Availability and Changes</h2>
-
-<p>
-We may modify, update, suspend, or discontinue features of the
-App at any time.
-</p>
-
-<p>
-Android updates, device manufacturers, third-party services, and
-game updates may also affect the availability or functionality
-of certain features.
-</p>
-
-<h2>11. Disclaimer</h2>
-
-<p>
-To the maximum extent permitted by applicable law, Clean Game
-Turbo is provided on an "as available" basis without guarantees
-that the App will always be uninterrupted, error-free, or
-compatible with every device or game.
-</p>
-
-<p>
-We do not guarantee specific gaming performance, storage savings,
-network performance, battery improvements, temperature
-reductions, or recovery of deleted files.
-</p>
-
-<h2>12. Limitation of Liability</h2>
-
-<p>
-To the maximum extent permitted by applicable law, the developer
-will not be responsible for indirect, incidental, special,
-consequential, or other losses resulting from the use or inability
-to use the App, including loss of data or device configuration
-changes.
-</p>
-
-<p>
-Nothing in these Terms excludes rights or remedies that cannot
-legally be excluded under applicable law.
-</p>
-
-<h2>13. Privacy</h2>
-
-<p>
-Your use of Clean Game Turbo is also governed by our Privacy
-Policy.
-</p>
-
-<p>
-<a href="privacy-policy.html">
-View Clean Game Turbo Privacy Policy
-</a>
-</p>
-
-<h2>14. Changes to These Terms</h2>
-
-<p>
-We may update these Terms when the App, its features, or legal
-requirements change.
-</p>
-
-<p>
-The effective date at the top of this page will be updated when
-new Terms are published.
-</p>
-
-<h2>15. Contact</h2>
-
-<p>
-For questions regarding these Terms, please contact:
-</p>
-
-<p>
-<strong>
-<a href="mailto:support.cleangameturbo@gmail.com">
-support.cleangameturbo@gmail.com
-</a>
-</strong>
-</p>
-
-<footer>
-    Clean Game Turbo<br>
-    Package: com.cleangameturbo.pro<br>
-    Last updated: October 5, 2026
-</footer>
-
-</div>
-</div>
-
+  <h2>11. Contact</h2>
+  <p>Questions about these Terms or the App: <a href="mailto:support.cleangameturbo@gmail.com">support.cleangameturbo@gmail.com</a>.</p>
+  <p><a href="index.html">Read the Privacy Policy</a>.</p>
+</main>
 </body>
 </html>
